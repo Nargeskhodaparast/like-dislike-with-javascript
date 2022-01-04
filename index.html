@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="voting">
+        <button id="like-btn">
+            <i class="fa fa-thumbs-up"></i>
+        </button>
+        <label for="in1"></label><input type="number" value="0" id="in1">
+    </div>
+    <div class="voting">
+        <button id="dislike-btn">
+            <i class="fa fa-thumbs-o-down"></i>
+        </button>
+        <label for="in2"></label><input type="number" value="0" id="in2">
+    </div>
+</div>
+<script>
+    const likeBtn = document.getElementById("like-btn");
+    const dislikeBtn = document.getElementById("dislike-btn");
+    const in1 = document.getElementById("in1");
+    const in2 = document.getElementById("in2");
+    likeBtn.addEventListener('click', () => {
+        in1.value = parseInt(in1.value) + 1;
+        in1.style.color = "#12ff00";
+        likeBtn.style.color = "#12ff00";
+    })
+    dislikeBtn.addEventListener('click', () => {
+        in2.value = parseInt(in1.value) + 1;
+        in2.style.color = "#ff0000";
+        dislikeBtn.style.color = "#ff0000";
+    })
+</script>
+</body>
+</html>

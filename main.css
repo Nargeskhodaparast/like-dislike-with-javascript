@@ -1,0 +1,49 @@
+body {
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    border: 3px solid darkgray;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voting {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 50px;
+    border: 0;
+    background: 0;
+    color: #919191;
+    pointer-events: none;
+    margin: 0 5px;
+}
+
+button {
+    color: #fff;
+    background: none;
+    border: 0;
+    padding: 0 15px;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: 0;
+}
+
+button.active {
+    color: #004eff;
+    transform: scale(1.1);
+}
